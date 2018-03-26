@@ -41,6 +41,37 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader"
+      },
+      // {
+      //   test: /\.(png|jpg|svg|gif)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {}
+      //     }
+      //   ]
+      // },
+      {
+          test: /\.(png|jp(e*)g|svg)$/,
+          use: [{
+              loader: 'url-loader',
+              options: {
+                  limit: 28000, // Convert images < 28kb to base64 strings
+                  name: 'images/[hash]-[name].[ext]'
+              }
+          }]
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+            },
+          },
+        ],
       }
     ]
   }
