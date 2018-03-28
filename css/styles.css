@@ -10,11 +10,43 @@ body {
 
 h1 {
   color: red;
+  margin: 0px;
+}
+
+header {
+  background-color: grey;
+}
+
+nav {
+  background-color: yellow;
+}
+
+main {
+  background-color: green;
+}
+
+footer {
+  background-color: pink;
+}
+
+.resumeDescription{
+  background-color: red;
+  height: 10vh;
+  color: white;
+}
+
+.projectImages {
+  background-color: lightgreen;
+  color: black;
+  height: 10vh;
 }
 
 .xxLogoContainer {
-  width: 100%;
-  height: 200px;
+  margin: auto;
+  width: 70vw;
+  height: 100vh;
   background-image:url('../src/img/xxlogo.svg');
   background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
