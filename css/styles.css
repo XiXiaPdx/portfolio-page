@@ -6,10 +6,9 @@ html {
 body {
   font-family: Helvetica, sans-serif;
   color: white;
-  margin: 0px;
   background-color: #111b2b;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -17,7 +16,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 header h1 {
-  position: relative;
   font-size: 12vw;
 }
 
@@ -33,20 +31,20 @@ header p {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100vw;
+  width: 100%;
 }
 
 .headerInfoArea{
-  width: 50vw;
-  text-align: center;
+  width: 100%;
+  /* text-align: center; */
 }
 
 .headerLogo{
-  width: 40vw;
+  width: 100%;
   height: 22vw;
   margin: auto;
   background-color: #00a6cc;
-  -webkit-mask: url(../src/img/xxlogo.svg) no-repeat;
+  -webkit-mask: url(../src/img/xxlogo.svg) no-repeat center;
   -webkit-mask-size: contain;
   /* background-image:url('../src/img/xxlogo.svg');
   background-repeat:no-repeat;
@@ -55,7 +53,7 @@ header {
 }
 
 main {
-  background-color: #111b2b;
+  /* background-color: #111b2b; */
 }
 
 footer {
@@ -74,6 +72,10 @@ footer {
   height: 10vh;
 }
 
-.xxLogoContainer{
+@media screen and (min-width: 1200px){
+  body {
+    width: 1080px;
+  }
+
 
 }
