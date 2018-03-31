@@ -75,7 +75,23 @@ footer {
 @media screen and (min-width: 1200px){
   body {
     width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .headerLogo{
+    height: 264px;
+  }
+  header h1 {
+    font-size: 144px;
   }
 
+  header h3 {
+    font-size: 52.8px;
+    margin-top: .3em;
+  }
+
+  header p {
+    font-size: 39px;
+  }
 
 }
