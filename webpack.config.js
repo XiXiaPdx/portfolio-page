@@ -55,16 +55,6 @@ module.exports = {
         ]
       }
       // {
-      //     test: /\.(png|jp(e*)g|svg)$/,
-      //     use: [{
-      //         loader: 'url-loader',
-      //         options: {
-      //             limit: 8000, // Convert images < 28kb to base64 strings
-      //             name: 'images/[hash]-[name].[ext]'
-      //         }
-      //     }]
-      // },
-      // {
       //   test: /\.(gif|png|jpe?g|svg)$/i,
       //   use: [
       //     'file-loader',
