@@ -44,10 +44,7 @@ header {
   width: 100%;
   height: 22vw;
   margin: auto;
-  /* background-color: #00a6cc;
-  -webkit-mask: url(../src/img/xxlogo.svg) no-repeat center;
-  -webkit-mask-size: contain; */
-  background-image:url('../src/img/xxlogo.svg');
+  background-image:url('/images/xxlogo.svg');
   background-repeat:no-repeat;
   background-position: center;
   background-size: contain;
