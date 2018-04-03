@@ -52,6 +52,12 @@ module.exports = {
               outputPath: 'images/',
               publicPath: 'images/'
             }
+          },
+          {
+            loader:'image-webpack-loader',
+            options: {
+              
+            }
           }
         ]
       }
