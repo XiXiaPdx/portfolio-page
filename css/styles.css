@@ -46,7 +46,7 @@ header {
   margin: auto;
   background-image:url('/images/xxlogo.svg');
   background-repeat:no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: contain;
 }
 
@@ -89,6 +89,10 @@ footer {
 
   header p {
     font-size: 39px;
+  }
+
+  #appetizingImage {
+    width: 25vw;
   }
 
 }
