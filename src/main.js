@@ -19,6 +19,6 @@ PrintTest();
 var appetizingImageName = $('#appetizingImageName')[0];
 var curretImageSource = $('#appetizingImage')[0].currentSrc;
 appetizingImageName.innerHTML = curretImageSource;
-// currentImageSource.onload = function(){
-//     console.log( "Src changed to ");
-// }
+document.getElementById('appetizingImage').onload = function(){
+  appetizingImageName.innerHTML = $('#appetizingImage')[0].currentSrc;
+};
