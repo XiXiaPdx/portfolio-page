@@ -8,13 +8,12 @@
   </head>
   <body>
     <header>
+      <div class="headerLogo">
+      </div>
       <div class="headerInfoArea">
-
         <h1>Xi Xia</h1>
         <p>Sounds like "Sha She"</p>
         <h3>Web Developer</h3>
-      </div>
-      <div class="headerLogo">
       </div>
     </header>
     <main>
@@ -25,10 +24,7 @@
           </p>
           <p>
 
-            My first spark for coding was in 1997 and dived back in starting 2017. I enjoy mastering the fundamentals the most.
-          </p>
-          <p>
-            Before my second career as a developer, I owned & operated a CrossFit studio for 10+ years. I learned I take initiative, have drive, and pretty resourceful.
+            My first spark for coding was in 1997 and dived back in starting 2017.  Before my second career as a developer, I owned & operated a CrossFit studio for 10+ years.
 
           </p>
         </section>
@@ -39,27 +35,34 @@
           </p>
         </section>
       </div>
-      <div class="projectImages">
+      <div class="projects">
         <h3>Code Projects</h3>
-        <h4 id="appetizingImageName"></h4>
-        <img id="appetizingImage"
+        <div class="projectCard">
+          <img class="projectImages"
           srcset="./images/appetizing450.jpg 450w,
-                  ./images/appetizing700.jpg 700w,
-                  ./images/appetizing900.jpg 900w"
-          sizes="(min-width: 1200px) 450px "
+          ./images/appetizing700.jpg 700w,
+          ./images/appetizing900.jpg 900w"
+          sizes="(min-width: 1200px) 450px"
 
           alt="appetizing app screen shot">
+            <h4 class="projectTitle">
+              Project Title
+            </h4>
+            <p class="projectDescription">
+              Project Description
+            </p>
 
-          <h4 id="turboImageName"></h4>
-          <img id="turboImage"
+
+        </div>
+
+          <img class="projectImages"
             srcset="./images/turbo450.jpg 450w,
                     ./images/turbo600plus.jpg 700w,"
             sizes="(min-width: 1200px) 450px "
 
             alt="turbo dog screen shot">
 
-            <h4 id="turbosunImageName"></h4>
-            <img id="turbosunImage"
+            <img class="projectImages"
               srcset="./images/turbosun450.jpg 450w,
                       ./images/turbosun650.jpg 700w,"
               sizes="(min-width: 1200px) 450px "
@@ -67,19 +70,19 @@
               alt="turbo dog at beach screen shot">
 
       </div>
-    </main>
-    <footer>
+      <div class="contactInfoArea">
 
-      <h3>Contact Me</h3>
-      <h4 id="headshotImageName"></h4>
-      <img id="headshotImage"
+        <h3>Contact Me</h3>
+        <img id="headshotImage"
         srcset="./images/headshot450.jpg 450w,
-              ./images/headshot700.jpg 700w,
-              ./images/headshot900.jpg 900w"
-        sizes="(max-width: 1200px) 450px, 600px"
+        ./images/headshot700.jpg 700w,
+        ./images/headshot900.jpg 900w"
+        sizes="(max-width: 1200px) 450px"
 
         alt="xx headsot picture">
-    </footer>
+      </div>
+    </main>
+
 
   </body>
 </html>

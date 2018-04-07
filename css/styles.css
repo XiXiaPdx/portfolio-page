@@ -9,6 +9,7 @@ body {
   background-color: #111b2b;
   padding-left: 5vw;
   padding-right: 5vw;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,18 +36,23 @@ header {
   width: 100%;
 }
 
+main h3 {
+  font-size: 4.4vw;
+}
+
 .headerInfoArea{
   width: 100%;
-  /* text-align: center; */
+  text-align: right;
 }
 
 .headerLogo{
   width: 100%;
-  height: 22vw;
-  margin: auto;
+  height: 100%;
+  margin-left:auto;
+  margin-right:auto;
   background-image:url('/images/xxlogo.svg');
   background-repeat:no-repeat;
-  background-position: right;
+  background-position: left;
   background-size: contain;
 }
 
@@ -54,6 +60,7 @@ header {
 }
 
 main {
+  margin-top: 7vh;
 }
 
 footer {
@@ -66,7 +73,15 @@ footer {
 
 .projectImages {
   color: white;
-  height: 100%;
+  /* height: 100%; */
+}
+
+.projectImages {
+  max-width: 100%;
+}
+
+.contactInfoArea img {
+  max-width: 100%;
 }
 
 @media screen and (min-width: 1200px){
@@ -75,8 +90,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  .headerLogo{
-    height: 264px;
+  header {
+    height: 288px;
   }
   header h1 {
     font-size: 144px;
@@ -90,5 +105,41 @@ footer {
   header p {
     font-size: 39px;
   }
+  main h3 {
+    font-size: 53px;
+  }
 
+}
+
+@media screen and (max-width: 600px){
+  main h3 {
+    font-size: 27px;
+  }
+
+  .projectImages  {
+    max-width: 40vw;
+    display: inline;
+  }
+
+  .contactInfoArea img {
+    max-width: 40vw;
+  }
+
+  .projectCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    width: 100%;
+  }
+
+  .projectCard h4 {
+    height: 10vh;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .projectCard p {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
 }
