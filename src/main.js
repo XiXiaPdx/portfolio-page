@@ -22,13 +22,6 @@ document.getElementById('appetizingImage').onload = function(){
   appetizingImageName.innerHTML = $('#appetizingImage')[0].currentSrc;
 };
 
-// var headshotImageName = $('#headshotImageName')[0];
-// var headImageSource = $('#headshotImage')[0].currentSrc;
-// headshotImageName.innerHTML = headImageSource;
-// document.getElementById('headshotImage').onload = function(){
-//   headshotImageName.innerHTML = $('#headshotImage')[0].currentSrc;
-// };
-//
 var turboImageName = $('#turboImageName')[0];
 var turboImageSource = $('#turboImage')[0].currentSrc;
 turboImageName.innerHTML = turboImageSource;
