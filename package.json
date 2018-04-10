@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "9.10.1"  
+  },
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "devstart": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
-    "prod": "webpack --mode production"
+    "prodbuild": "webpack --config webpack.production.config.js",
+    "prod": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +19,7 @@
   "dependencies": {
     "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",
+    "express": "^4.16.3",
     "jquery": "^3.3.1",
     "url-loader": "^1.0.1"
   },
