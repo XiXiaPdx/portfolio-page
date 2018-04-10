@@ -96,6 +96,10 @@ footer {
   margin-top: 20px;
 }
 
+.contact-Info-Area img {
+  max-width: 160px;
+}
+
 @media screen and (max-width: 600px){
   main h3 {
     font-size: 27px;
@@ -106,7 +110,7 @@ footer {
   }
 
   .contact-Info-Area img {
-    max-width: 40vw;
+    max-width: 26vw;
   }
 }
 
